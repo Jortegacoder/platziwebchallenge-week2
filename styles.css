@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+:root {
+    --font-Manrope: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: var(--font-Manrope);
+    background-color:hsl(210, 46%, 95%);
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-section {
+    width: 240px;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 2px 5px #151414;
+}
+
+.image-container {
+    height: 160px;
+    background-image: url(./images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.text-container {
+    padding-top: 20px;
+}
+
+.text-container h1 {
+    padding: 0px 20px;
+    font-size: 13rem;
+    line-height: 18rem;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+}
+
+.text-description {
+    padding: 0px 20px;
+    font-size: 10rem;
+    margin: 10px 0px 15px;
+    font-weight: 500;
+    color: hsl(214, 17%, 51%); 
+}
+
+.card-container { 
+    padding: 0px 20px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-container-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.image-avatar {
+    width: 45px;
+}
+
+.image-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.description-avatar {
+    margin-left: 5px;
+}
+
+.description-avatar h5 {
+    font-size: 10px;
+    color: hsl(217, 19%, 35%);
+}
+
+.description-avatar p {
+    font-size: 9px;
+    color: hsl(214, 17%, 51%);
+}
+
+.share-button {
+    border: 0px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.share-button--desktop {
+    display: none;
+}
+
+.icon-share {
+    color: hsl(217, 19%, 35%);
+}
+
+.card-container2 {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(217, 19%, 35%);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.social-media-container {
+    display: flex;
+    padding-left: 6px;
+}
+
+.social-media-container span {
+    font-size: 12px;
+    color: hsl(214, 17%, 51%);
+}
+
+.social-media {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.social-media li {
+    margin-left: 10px;
+}
+
+.icon {
+    font-size: 17px; 
+    color:hsl(210, 46%, 95%);
+}
+
+.share-button2 {
+    border: 0px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: hsl(214, 17%, 51%);
+}
+
+.icon-share2 {
+    color:hsl(210, 46%, 95%);
+}
+
+.triangle-container {
+    display: none;
+}
+
+footer {
+    height: 5vh;
+}
+
+.attribution { 
+    font-size: 11rem;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        width: 700px;
+        height: 90vh;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .description-section {
+        width: 700px;
+        height: 300px;
+        display: flex;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 321px;
+        border-top-right-radius: 0px;
+    }
+
+    .text-container {
+        padding-top: 30px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-container h1 {
+        font-size: 21rem;
+        line-height: 25rem;
+    }
+
+    .text-description {
+        font-size: 13rem;
+        line-height: 18px;
+    }
+
+    .card-container {
+        padding: 0px 40px 20px 20px;
+    }
+
+    .share-button {
+        display: none;
+    }
+
+    .share-button--desktop {
+        width: 35px;
+        height: 35px;
+        border: 0px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: hsl(210, 46%, 95%);
+        display: block;
+    }
+
+    .share-color {
+        background-color: hsl(214, 17%, 51%);
+    }
+
+    .icon-color {
+        color:hsl(210, 46%, 95%);
+    }
+
+    .image-avatar {
+        width: 60px;
+    }
+
+    .description-avatar h5 {
+        font-size: 15px;
+    }
+
+    .description-avatar p {
+        font-size: 13px;
+    }
+
+    .card-container2 {
+        width: 209px;
+        height: 60px;
+        border-radius: 8px;
+        position: absolute;
+        right: -6%;
+        bottom: 38%;
+    }
+
+    .social-media-container {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .social-media-container span {
+        font-size: 13rem;
+    }
+
+    .icon {
+        font-size: 19rem;
+    }
+
+    .share-button2 {
+        display: none;
+    }
+
+    .triangle-container {
+        width: 30px;
+        height: 30px;
+        display: block;
+        clip-path: polygon(49% 45%, 0 0, 100% 0);
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        top: 99%;
+        left: 45%;
+    }
+
+    footer {
+        height: 10vh;
+    }
+    .attribution {
+        font-size: 15rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
